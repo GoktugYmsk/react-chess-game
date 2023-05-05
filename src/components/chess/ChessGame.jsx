@@ -1,8 +1,8 @@
 import React, { useState } from "react";
+
 import Chessboard from "chessboardjsx";
-import {Chess} from "chess.js";
-
-
+import { Chess } from "chess.js";
+import './index.scss'
 
 function ChessGame() {
   const [chess] = useState(new Chess());
@@ -11,7 +11,7 @@ function ChessGame() {
     const move = chess.move({
       from: sourceSquare,
       to: targetSquare,
-      promotion: "q" 
+      promotion: "q"
     });
 
     if (!move) return;
@@ -32,7 +32,7 @@ function ChessGame() {
   const [fen, setFen] = useState(chess.fen());
 
   return (
-    <div>
+    <div className="gameBoard" >
       <Chessboard position={fen} onDrop={handleDrop} />
     </div>
   );

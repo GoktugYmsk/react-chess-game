@@ -3,41 +3,45 @@ $secondary-color: #333;
 $accent-color: #c42a2a;
 
 .footer {
-    background-color: $secondary-color;
-    color: $primary-color;
-    padding: 30px 0;
-
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .logo {
-        font-size: 24px;
-        font-weight: bold;
-    }
-
-    .menu {
-        display: flex;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-
-        li {
-            list-style: none;
-            margin-left: 20px;
-
-            a {
-                color: $primary-color;
-                text-decoration: none;
-                transition: all 0.2s ease-in-out;
-
-                &:hover {
-                    color: $accent-color;
-                }
-            }
+  background-color: $secondary-color;
+  color: $primary-color;
+  padding: 30px 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    
+    li {
+      list-style: none;
+      margin-left: 20px;
+      
+      a {
+        color: $primary-color;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+        
+        &:hover {
+          color: $accent-color;
         }
+      }
     }
+  }
 }
