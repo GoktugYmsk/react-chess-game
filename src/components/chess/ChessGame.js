@@ -11,7 +11,7 @@ function ChessGame() {
     const move = chess.move({
       from: sourceSquare,
       to: targetSquare,
-      promotion: "q" // default promotion to queen
+      promotion: "q" 
     });
 
     if (!move) return;
