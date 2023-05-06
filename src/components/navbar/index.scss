@@ -1,34 +1,38 @@
 .navbar {
-    background-color: #333;
-    color: #fff;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+
+  &__list {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-  
-    &__list {
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-  
-    &__item {
-      margin-right: 1rem;
-  
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  
-    &__link {
-      color: #fff;
-      text-decoration: none;
-      transition: opacity 0.2s ease-in-out;
-  
-      &:hover {
-        opacity: 0.8;
-      }
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    margin-right: 1rem;
+
+    &:last-child {
+      margin-right: 0;
     }
   }
-  
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 0.2s ease-in-out;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    background-color: rgb(8, 35, 104);
+    color: white;
+  }
+}
