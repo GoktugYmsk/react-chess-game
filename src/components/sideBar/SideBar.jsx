@@ -7,7 +7,7 @@ function SideBar() {
         <aside>
             <h2>Side Bar Başlığı</h2>
             <ul>
-                <li><a href="#">Proje 1</a></li>
+                <h1>Etiket değiştirildi</h1>
                 <li><a href="#">Proje 2</a></li>
                 <li><a href="#">Proje 3</a></li>
             </ul>
