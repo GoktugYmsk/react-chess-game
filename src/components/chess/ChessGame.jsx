@@ -43,6 +43,18 @@ function ChessGame() {
           <li>Piyon - İlk hareketinde iki kare ilerleyebilir ve diğer piyonları geçerek rakip taşlarını yiyebilir</li>
           <li>Şah - Sadece bir kare hareket edebilir ve mat durumuna gelirse oyun biter</li>
         </ul>
+        <div className="game__rules" >
+          <h2>Satranç Oyunu Kuralları:</h2>
+          <ul>
+            <li>Her oyuncu, kendisine verilen 16 taşı, sırasıyla ilk iki sıraya yerleştirir.</li>
+            <li>Oyuncular, sırayla birer hamle yaparlar ve amaçları rakip Şah'ını mat etmek veya oyunu kazanacak bir pozisyon yakalamaktır.</li>
+            <li>Bir hamlede sadece bir taş oynatılabilir.</li>
+            <li>Bir taşın hedefi üzerinde karşı tarafın bir taşı varsa, bu taş yenilir ve oyundan çıkarılır.</li>
+            <li>Bir oyuncunun Şah'ı tehdit altındaysa, bu durumda mat olmamak için Şah'ın kaçması veya rakibin taşını engellemesi gerekir.</li>
+            <li>Bir oyuncu mat olursa, oyunu kaybeder.</li>
+            <li>Bir oyuncu, rakibinin tüm taşlarını yendiğinde veya rakibi terk ettiğinde, oyunu kazanır.</li>
+          </ul>
+        </div>
       </div>
       <Chessboard position={fen} onDrop={handleDrop} />
     </div>

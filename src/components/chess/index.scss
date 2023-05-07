@@ -11,7 +11,7 @@
         justify-items: center;
         margin-right: 30px;
         position: relative;
-        top: 600px;
+        top: 1000px;
         left: 500px;
 
         h2 {
@@ -21,10 +21,11 @@
 
         ul {
             list-style-type: disc;
-            margin-left: 20px;
+            margin-left: 0;
 
             li {
-                margin-bottom: 5px;
+                margin-bottom: 50px;
+                align-self: flex-start;
             }
         }
     }
@@ -38,4 +39,19 @@
             margin-bottom: 20px;
         }
     }
+}
+
+.game__rules{
+    position: relative;
+    top: 200px;
+}
+
+.gameBoard__info ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.gameBoard__info li {
+    margin-bottom: 10px;
 }
