@@ -32,7 +32,18 @@ function ChessGame() {
   const [fen, setFen] = useState(chess.fen());
 
   return (
-    <div className="gameBoard" >
+    <div className="gameBoard">
+      <div className="gameBoard__info">
+        <h2>Satranç Taşları İşlevleri:</h2>
+        <ul>
+          <li>Vezir - Her yönde hareket edebilir</li>
+          <li>Kale - Dikey veya yatay yönde hareket edebilir</li>
+          <li>Fil - Çapraz yönde hareket edebilir</li>
+          <li>At - L şeklinde hareket eder</li>
+          <li>Piyon - İlk hareketinde iki kare ilerleyebilir ve diğer piyonları geçerek rakip taşlarını yiyebilir</li>
+          <li>Şah - Sadece bir kare hareket edebilir ve mat durumuna gelirse oyun biter</li>
+        </ul>
+      </div>
       <Chessboard position={fen} onDrop={handleDrop} />
     </div>
   );
